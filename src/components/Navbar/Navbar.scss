@@ -11,7 +11,7 @@
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     position: fixed;
-    z-index: 2;
+    z-index: 100;
 }
 
 .app__navbar-logo {
@@ -22,10 +22,13 @@
     img {
         width: 90px;
         height: 20px;
+        position: relative;
+
 
         @media screen and (min-width: 200px) {
             width: 180px;
             height:  40px;
+            position: absolute;
         }
     }
 }
@@ -39,7 +42,7 @@
     list-style: none;
 
     li {
-        margin: 0 1rem;
+        margin: 0.25rem 1.5rem;
         cursor: pointer;
 
         flex-direction: column;
@@ -90,6 +93,8 @@
         justify-content: center;
         align-items: center;
         background: var(--secondary-color);
+
+        z-index: 1000;
 
         svg {
             width: 70%;

@@ -1,73 +1,106 @@
 import React from 'react';
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
+import { BsMouse, BsChevronCompactDown } from 'react-icons/bs';
 
-import { AppWrap } from '../../wrapper'
-import { images } from '../../constants'
-import './Header.scss'
+import { AppWrap } from '../../wrapper';
+import { images } from '../../constants';
+import ticket from '../../assets/improvesariosTicket.svg'
+import ticketwide from '../../assets/improvesariosTicketWide.svg'
+import './Header.scss';
 
-const scaleVariants = {
-  whileInView: {
-    scale: [0, 1],
-    opacity: [0 ,1],
-    transition: {
-      duration: 1,
-      ease: 'easeInOut'
-    }
-  }
-}
 
-const Header = () => {
-  return (
-    <div className="app__header app__flex">
-      <motion.div
-        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-        transition={{ duration: 0.5 }}
-        className="app__header-info"
-      >
-        <div className="app__header-badge">
-          <div className="badge-cmp app__flex">
-            <span>👋</span>
-            <div style={{ marginLeft:20 }}>
-              <p className='p-text'>Hello, I am</p>
-              <h1 className='head-text'>Micael</h1>
-            </div>
-          </div>
-        
-          <div className="tag-cmp app__flex">
-            <p className="p-text">Web Developer</p>
-            <p className="p-text">Freelancer</p>
-          </div>
-        </div>
-      </motion.div>
 
-      <motion.div
+const Header = () => (
+  <div className="app__header">
+      <motion.img 
+        className="app__header-img dom" 
+        src= {images.dominic_f}
+        alt="Dominic Bentham"
         whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className="app__header-img"
+        initial={{ opacity: 0 }}
+        transition= {{ delay: 0.5, duration: 0.5}}>
+      </motion.img>
+
+      <motion.img 
+        className="app__header-img stephen" 
+        src={images.stephen_f}
+        alt="Stephen Brown"
+        whileInView={{ opacity: [0, 1] }}
+        initial={{ opacity: 0 }}
+        transition= {{ delay: 0.2, duration: 0.5}}>
+      </motion.img>
+
+      <motion.img 
+        className="app__header-img becca"
+        src={images.becca_f}
+        alt="Rebecca Madden"
+        whileInView={{ opacity: [0, 1] }}
+        initial={{ opacity: 0 }}
+        transition= {{ delay:0.1, duration: 0.2}}>
+      </motion.img>
+
+      <motion.img 
+        className="app__header-img rebecca"
+        src={images.rebecca_f}
+        alt="Rebecca Chandler"
+        whileInView={{ opacity: [0, 1] }}
+        initial={{ opacity: 0 }}
+        transition= {{ delay:0.2, duration: 0.5}}>
+      </motion.img>
+
+      <motion.img 
+        className="app__header-img emily"
+        src={images.emily_f}
+        alt="Emily Lane"
+        whileInView={{ opacity: [0, 1] }}
+        initial={{ opacity: 0 }}
+        transition= {{ delay: 0.5, duration: 0.5}}>
+      </motion.img>
+
+      <div className='app__header-logo_text'>
+        <img src={images.logo_text_anim} alt="Improvesarios"></img>
+      </div>
+
+      <div
+        className='app__header-logo_sub'
       >
-        <img src={images.profile} alt="progile_bg" />
-        <motion.img
-          whileInView={{ scale: [0, 1] }}
-          transition={{ duration: 1, ease: 'easeInOut' }}
-          src={images.circle}
-          alt="profile_circle"
-          className="overlay_circle"
-        />
-      </motion.div>
-      
+        <p>Improvised Opera</p>
+      </div>
+
       <motion.div
-        variant={scaleVariants}
-        whileInView={scaleVariants.whileInView}
-        className="app__header-circles"
+        className='app__header-mouse'
+        whileInView={{ opacity: [0, 1]}}
+        initial={{ opacity: 0}}
+        transition= {{ delay: 5 }}
+        viewport={{ once: true}}
       >
-        {[images.flutter, images.redux, images.sass].map((circle, index) => ( 
-          <div className='circle-cmp app__flex' key={'circle-${index}'}>
-          <img src={circle} alt="circle" />
-          </div>        
-        ))}
+        <BsMouse />
       </motion.div>
-    </div>
-  )
-}
+
+      <motion.div
+          className='app__header-mouse-down'
+          whileInView={{ opacity: [0, 1]}}
+          initial={{ opacity: 0}}
+          animate={{ y: [0, 14, 0] }}
+          transition={{
+            delay: 5,
+            ease: "linear",
+            duration: 2,
+            y: { repeat: Infinity, duration: 1 }
+            }}
+          viewport={{ once: true}}
+      >
+        <BsChevronCompactDown />
+      </motion.div>
+
+      <a className='app__header-tickets' href='#upcoming'>
+        <img src={ticket}></img>
+      </a>
+
+      <a className='app__header-tickets-wide' href='#upcoming'>
+        <img src={ticketwide}></img>
+      </a>
+  </div>
+);
 
 export default AppWrap(Header, 'home');

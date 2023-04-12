@@ -1,0 +1,114 @@
+.app__performer {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 7rem;
+
+    h2 {
+        margin-bottom: 3rem;
+    }
+}
+
+.app__performer-item {
+    max-width: 70vw;
+    min-height: 40%;
+    background-color: var(--white-color);
+    display: flex;
+    padding: 2rem;
+    margin-top: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+
+    transition: all 0.3s ease-in-out;
+
+    img {
+        width: 30vh;
+        height: 30vh;
+        object-fit: cover;
+    }
+
+    @media screen and (min-width: 2000px) {
+        img {
+            width: 40vh;
+            height: 40vh;
+            object-fit: cover;
+        }
+    }
+
+    @media screen and (max-width: 1400px) {
+        max-width: 100%;
+    }
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
+}
+
+.app__performer-content {
+    flex: 1;
+    height: 100%;
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    p {
+        font-size: 1.25rem;
+        line-height: 2rem;
+        color: var(--black-color);
+        font-family: var(--font-base);
+        min-height: 1rem;
+    }
+
+    h4 {
+        font-weight: 600;
+        color: var(--secondary-color);
+        margin-top: 2rem;
+        min-height: 1rem;
+    }
+
+    h5 {
+        font-weight: 400;
+        color: var(--gray-color);
+        margin-top: 5px;
+    }
+
+    
+    @media screen and (min-width: 2000px) {
+        p {
+            font-size: 1.75rem;
+            line-height: 3rem;
+        }
+    }
+}
+
+.app__performer-btns {
+    flex-direction: row;
+    margin-top: 1rem;
+
+    div {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: var(--white-color);
+
+        margin: 1rem;
+        transition: all 0.3s ease-in-out;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            color: var(--secondary-color);
+        }
+
+        &:hover {
+            background-color: var(--secondary-color);
+
+            svg {
+                color: var(--white-color);
+            }
+        }
+    }
+}
