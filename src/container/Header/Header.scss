@@ -49,11 +49,15 @@
     @media screen and (max-width: 900px) {
         margin-bottom: 13rem;
     }
+
+    @media screen and (min-width: 2000px) {
+        margin-bottom: 9rem;
+    }
 }
 
 
 .app__header-logo_sub {
-    width: 42%;
+    width: 18vw;
     height: fit-content;
     position: absolute;
     display: flex;
@@ -62,44 +66,37 @@
     justify-content: center;
     margin-bottom: 1rem;
     z-index: 55;
-    margin-right: -1rem;
+    margin-right: 4rem;
     animation: slide-in-text-sub;
     animation-duration: 2.4s;
 
-    p {
-        font-weight: 500;
-        font-family: 'pristina', sans-serif;
-        font-size: 2.5em;
-        color: hsl(1, 87, 56);
+    img {
         transform: rotate(-3deg);
     }
 
     @media screen and (max-width: 1200px) {
-        width: auto;
+        width: 32vw;
         margin-right: -0rem;
         margin-bottom: 3rem;
         background-color: rgba(#edf2f8, 0.8);
         border-radius: 1rem;
-        p {
-            font-size: 3.5em;
-        }
     }
 
     @media screen and (max-width: 900px) {
-        width: auto;
-        margin-right: 5rem;
-        margin-bottom: 10rem;
-        p {
-            font-size: 2rem;
-        }
+        width: 35vw;
+        margin-right: 4rem;
+        margin-bottom: 8rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 35vw;
+        margin-right: 4rem;
+        margin-bottom: 11rem;
     }
 
 
     @media screen and (min-width: 2000px) {
-        margin-right: -12rem;
-        p {
-            font-size: 3.5em;
-        }
+        width: 20vw;
     }
 }
 
@@ -207,15 +204,16 @@
     display: flex;
     left: 8vw;
     top: 55vh;
-    width: 20%;
-    height: 55%;
+    width: 25vw;
+    height: 55vh;
     transform: rotate(-5deg);
     animation: slide-in-ticket;
     animation-duration: 1.5s;
     cursor: pointer;
 
     @media screen and (max-width: 1200px) {
-        width: 22%;
+        width: 22vw;
+        height: 35vh;
         top: 30vh;
         left: -1vw;
         transform: rotate(-1deg);
@@ -234,10 +232,12 @@
     display: none;
 
     @media screen and (max-width: 780px) {
+        z-index: 60;
         display: flex;
         position: absolute;
-        width: 80%;
-        top: 55vh;
+        width: 80vw;
+        height: 30vh;
+        top: 80vh;
         right: 4vw;
         transform: rotate(12deg);
         animation: slide-in-wide;

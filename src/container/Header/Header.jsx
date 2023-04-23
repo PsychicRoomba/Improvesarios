@@ -6,6 +6,7 @@ import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
 import ticket from '../../assets/improvesariosTicket.svg'
 import ticketwide from '../../assets/improvesariosTicketWide.svg'
+import sub from '../../assets/improvesariosSub.svg'
 import './Header.scss';
 
 
@@ -61,10 +62,8 @@ const Header = () => (
         <img src={images.logo_text_anim} alt="Improvesarios"></img>
       </div>
 
-      <div
-        className='app__header-logo_sub'
-      >
-        <p>Improvised Opera</p>
+      <div className='app__header-logo_sub'>
+        <img src={sub}></img>
       </div>
 
       <motion.div
