@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a1bf26d3.css",
+    "main.js": "/static/js/main.f3c56899.js",
+    "static/media/logo_text_anim.gif": "/static/media/logo_text_anim.896a0797f15d4c1df636.gif",
+    "static/media/Rebecca Chandler.webp": "/static/media/Rebecca Chandler.1c16d812fa01454f2180.webp",
+    "static/media/bgWhite.png": "/static/media/bgWhite.79658cadae50b3b16ee5.png",
+    "static/media/Emily Lane.webp": "/static/media/Emily Lane.4d9e00175f664dcb4649.webp",
+    "static/media/Rebecca Madden.webp": "/static/media/Rebecca Madden.0dd2e228928869cc2d6a.webp",
+    "static/media/Stephen Brown.webp": "/static/media/Stephen Brown.102f1c099fb3ff549942.webp",
+    "static/media/Dominic Bentham.webp": "/static/media/Dominic Bentham.21af72ce3df8fdce0188.webp",
+    "static/media/logo_rec.png": "/static/media/logo_rec.9b6c9da2555df47aae58.png",
+    "static/media/logo_sq.png": "/static/media/logo_sq.fac8ec94516244d50206.png",
+    "static/media/pristina.ttf": "/static/media/pristina.13348710f949070c17f8.ttf",
+    "static/media/improvesariosTicketWide.svg": "/static/media/improvesariosTicketWide.983c8e81c4d9e73cd837502c6cbda186.svg",
+    "static/media/improvesariosTicket.svg": "/static/media/improvesariosTicket.f3dac6aa5241f04eb63b52281ff6ad89.svg",
+    "static/media/improvesariosSub.svg": "/static/media/improvesariosSub.7fa910ea75492920959543a0c9ecc145.svg",
+    "static/media/email.png": "/static/media/email.37b9e890eea501421fbf.png",
+    "index.html": "/index.html",
+    "main.a1bf26d3.css.map": "/static/css/main.a1bf26d3.css.map",
+    "main.f3c56899.js.map": "/static/js/main.f3c56899.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1bf26d3.css",
+    "static/js/main.f3c56899.js"
+  ]
+}
