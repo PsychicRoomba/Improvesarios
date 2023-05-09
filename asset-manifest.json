@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8eb923ec.css",
-    "main.js": "/static/js/main.73141390.js",
+    "main.js": "/static/js/main.e6663285.js",
     "static/media/logo_text_anim.gif": "/static/media/logo_text_anim.896a0797f15d4c1df636.gif",
     "static/media/Rebecca Chandler.webp": "/static/media/Rebecca Chandler.1c16d812fa01454f2180.webp",
     "static/media/bgWhite.png": "/static/media/bgWhite.79658cadae50b3b16ee5.png",
@@ -18,10 +18,10 @@
     "static/media/email.png": "/static/media/email.37b9e890eea501421fbf.png",
     "index.html": "/index.html",
     "main.8eb923ec.css.map": "/static/css/main.8eb923ec.css.map",
-    "main.73141390.js.map": "/static/js/main.73141390.js.map"
+    "main.e6663285.js.map": "/static/js/main.e6663285.js.map"
   },
   "entrypoints": [
     "static/css/main.8eb923ec.css",
-    "static/js/main.73141390.js"
+    "static/js/main.e6663285.js"
   ]
 }
