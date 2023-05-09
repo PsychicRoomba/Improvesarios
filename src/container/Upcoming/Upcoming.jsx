@@ -13,7 +13,7 @@ const Upcoming = () => {
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
   useEffect(() => {
-    const query = '*[_type == "upcomings"]';
+    const query = '*[_type == "upcomings"] | order(dates asc)';
 
     client.fetch(query).then((data) => {
       setUpcomings(data);

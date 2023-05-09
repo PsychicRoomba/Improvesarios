@@ -2,10 +2,16 @@ import React from 'react'
 import { BsInstagram } from 'react-icons/bs'
 import { SiYoutube } from 'react-icons/si'
 import { FaFacebookF, FaTiktok } from 'react-icons/fa'
+import { SiBuymeacoffee } from 'react-icons/si'
 
 const SocialMedia = () => {
   return (
-    <div className="app__social">
+    <div className="app__social">       
+        <a href ="https://www.buymeacoffee.com/improvesarios" target='_blank' rel="noreferrer">
+          <div>
+              <SiBuymeacoffee />
+          </div>
+        </a>
         <a href="https://www.tiktok.com/@improvesarios" target="_blank" rel="noreferrer">
           <div>
               <FaTiktok />

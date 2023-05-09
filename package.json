@@ -2,6 +2,7 @@
   "name": "frontend_react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://improvesarios.com/",
   "dependencies": {
     "@portabletext/react": "^2.0.2",
     "@sanity/client": "^5.2.2",
